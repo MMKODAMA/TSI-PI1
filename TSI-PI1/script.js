@@ -1,4 +1,4 @@
-let slideIndex = 0;
+/*let slideIndex = 0;
 
 function showSlide(index) {
   const slides = document.querySelectorAll(".slider-item");
@@ -23,4 +23,21 @@ function prevSlide() {
   showSlide(slideIndex);
 }
 
-showSlide(slideIndex);
+showSlide(slideIndex);*/
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function() {
+    nextImage();
+}, 5000)
+
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count=1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+}
