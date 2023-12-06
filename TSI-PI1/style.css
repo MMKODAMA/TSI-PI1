@@ -135,3 +135,8 @@ img{
 #radio3:checked ~ .navigation-auto .auto-btn3 {
     background-color: #fff;
 }
+
+.mini {
+    width: 60px;
+    height: 50px;
+}
